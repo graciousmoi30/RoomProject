@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+body {
+    font-family: "league spartan", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    position: relative;
+    color:white;
+    grid-column: 1/span 2;
+    grid-row: 1;
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+}
+
+
+.Container > div {
+    position: absolute;
+    text-align: left;
+    top: 16px;
+    left: 16px;
+}
+
+.topleft {
+    word-spacing: 5pt;
+    display: inline-flex;
+    width: 20rem;
+    margin-left: 0rem;
+    font-size: 20px;
+}
+    a.link {
+        text-decoration: none; color: white; 
+    }
+    a.link:visited {
+        text-decoration: none; color: white
+    }
+    a.link:hover {
+        text-decoration: underline; color: white; cursor: pointer;
+    }
+    a.link :active {
+        text-decoration: none; color: white; font: 150%;
+    }
+
+.mylinks {
+    display:inline-flex;
+    list-style: none;
+    width:15rem;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    font-size: small;
+}
+
+
+
+.Grid {
+    display: grid;
+    grid-template-columns: 30% 30% 10% 30%;
+    margin: 7rem;
+    padding: 2.3rem;
+    /*background-color: aqua;*/
+}
+
+.Container2 h2
+{
+    font-size: 35px;
+}
+
+#text1 {
+    font-size: 13px;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.2;
+}
+
+.Container2 {
+    grid-column: 3/span 2;
+    grid-row:1;
+    padding-left: 2.2rem;
+    padding-right: 1rem;
+    /*grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: black;*/
+}
+
+Button {
+background-color: white;
+width: 10rem;
+cursor: pointer;
+border: none;
+margin-left:-0.3rem;
+letter-spacing: 5px;
+font-size: 10px;
+font-weight: 700;
+}
+
+#text2 {
+    color:hsl(0, 0%, 63%);
+}
+
+.Container4 {
+    /*background-color: blue;*/
+    font-size: 11.2px;
+    line-height: 1.4;
+    grid-column: 2/span 2;
+    grid-row: 2;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    /*grid-column-start: 7;
+    grid-column-end: 9;*/
+}
+
+#furniture {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .Grid {
+        display:block;
+        margin-left: -2rem;
+        margin-right: -2rem;
+        margin-top: -2rem;
+        margin-bottom: -1rem;
+    }
+
+    .mobileimage img {
+        display: block;
+    }
+
+    .desktopimage img {
+        display: none;
+    }
+
+    .Container2 {
+        width: 400px;
+        height: 400px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .Container4 {
+        width: 400px;
+        height: 300px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #text1 {
+        height:200px;
+        font-size: 19px;
+        width: 360px;
+    }
+
+    #text2 {
+        height:200px;
+        width: 360px;
+        font-size: 18px;
+    }
+
+    .Container3 img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .Container5 img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .mylinks {
+        display:none;
+    }
+
+    h2 {
+        font-size: 25px;
+        width: 350px;
+        height: 80px;
+    }
+
+    .home {
+        margin-left: 6rem;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:700px) {
+    .mobileimage img {
+        display: none;
+    }
+
+    .hamburger img {
+        display: none;
+    }
+
+}
+
